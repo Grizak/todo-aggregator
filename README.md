@@ -5,25 +5,21 @@ A powerful VSCode extension that scans your entire workspace for TODO, FIXME, HA
 ## Features
 
 ### 🔍 Comprehensive Scanning
-
 - Automatically detects TODO comments across **all text files** in your workspace
 - Supports multiple comment styles: `//`, `/* */`, `#`, `<!-- -->`, and `;`
 - Recognizes common tags: `TODO`, `FIXME`, `HACK`, `BUG`, `NOTE`
 
 ### 📊 Organized Tree View
-
 - Groups TODOs by tag type for easy navigation
 - Shows file name, line number, and count per category
 - Click any TODO to jump directly to its location in the code
 
 ### ⚡ Real-Time Updates
-
 - Automatically refreshes as you type (with smart debouncing)
 - Watches for file creation, modification, and deletion
 - No manual refresh needed - always up to date
 
 ### 🏷️ Enhanced Metadata
-
 - **Priority Tags**: Mark TODOs with `[HIGH]`, `[MEDIUM]`, or `[LOW]` priority
 - **Author Attribution**: Tag team members with `@username`
 - **Smart Icons**: Visual indicators based on tag type and priority level
@@ -67,30 +63,28 @@ Access commands via Command Palette (`Ctrl+Shift+P` or `Cmd+Shift+P`)
 ## Extension Settings
 
 This extension works out of the box with no configuration required. It automatically:
-
 - Scans all text files in your workspace
 - Excludes `node_modules`, `.git`, `dist`, `build`, and other common directories
 - Ignores binary files and files larger than 1MB
 
 ## Supported Comment Styles
 
-| Language              | Comment Style   | Example                        |
-| --------------------- | --------------- | ------------------------------ |
-| JavaScript/TypeScript | `//` or `/* */` | `// TODO: Add validation`      |
-| Python/Ruby/Shell     | `#`             | `# FIXME: Handle edge case`    |
-| HTML/XML              | `<!-- -->`      | `<!-- TODO: Update markup -->` |
-| Lisp/Assembly         | `;`             | `; HACK: Temporary fix`        |
+| Language | Comment Style | Example |
+|----------|--------------|---------|
+| JavaScript/TypeScript | `//` or `/* */` | `// TODO: Add validation` |
+| Python/Ruby/Shell | `#` | `# FIXME: Handle edge case` |
+| HTML/XML | `<!-- -->` | `<!-- TODO: Update markup -->` |
+| Lisp/Assembly | `;` | `; HACK: Temporary fix` |
 
 ## Priority Levels
 
 Use square brackets to indicate priority:
 
 - `[HIGH]` or `[URGENT]` - Shows alert icon (🔴)
-- `[MEDIUM]` - Shows warning icon (🟡)
+- `[MEDIUM]` - Shows warning icon (🟡)  
 - `[LOW]` - Shows info icon (🔵)
 
 Example:
-
 ```typescript
 // TODO [HIGH]: This needs immediate attention!
 ```
@@ -130,7 +124,6 @@ Author names are automatically capitalized in the display.
 Initial release of TODO Aggregator
 
 **Features:**
-
 - Workspace-wide TODO scanning
 - Real-time file watching and auto-refresh
 - Priority and author metadata support
@@ -140,8 +133,12 @@ Initial release of TODO Aggregator
 
 ---
 
+## Installation
+
+Install directly from the [Visual Studio Marketplace](https://marketplace.visualstudio.com/items?itemName=grizak.todo-aggregator) or search for "Todo Aggregator" in the VSCode Extensions panel.
+
 ## Feedback & Contributions
 
-Found a bug or have a feature request? Please open an issue on the [GitHub repository](https://github.com/Grizak/todo-aggregator/issues).
+Found a bug or have a feature request? Feel free to reach out or leave a review on the marketplace!
 
 **Enjoy organizing your TODOs!** ✨
