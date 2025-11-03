@@ -139,6 +139,6 @@ Install directly from the [Visual Studio Marketplace](https://marketplace.visual
 
 ## Feedback & Contributions
 
-Found a bug or have a feature request? Feel free to reach out or leave a review on the marketplace!
+Found a bug or have a feature request? Feel free to reach out, add an [issue](https://github.com/Grizak/todo-aggregator/issues) in the github repo or leave a review on the marketplace!
 
 **Enjoy organizing your TODOs!** ✨
