@@ -76,7 +76,7 @@ export function activate(context: vscode.ExtensionContext) {
   fileWatcher.onDidDelete(debouncedScan);
 
   // Also watch for active changes (when you type)
-  vscode.workspace.onDidChangeTextDocument((event) => {
+  vscode.workspace.onDidChangeTextDocument(() => {
     // Only scan if the document is saved or after typing stops
     debouncedScan();
   });

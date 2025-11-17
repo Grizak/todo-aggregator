@@ -110,6 +110,21 @@ export class TodoTreeProvider implements vscode.TreeDataProvider<TodoTreeItem> {
       // Root level - group by tag
       const groupedByTag = this.groupByTag(this.todos);
 
+      // If there are no todos, return a single informative item
+      if (Object.keys(groupedByTag).length === 0) {
+        const emptyItem = new TodoTreeItem(
+          "No todos right now",
+          vscode.TreeItemCollapsibleState.None
+        );
+        // give it a subtle icon and context so it can be styled or ignored by commands
+        emptyItem.iconPath = new vscode.ThemeIcon("info");
+        emptyItem.contextValue = "noTodos";
+        emptyItem.tooltip =
+          "There are currently no TODOs found in the workspace.";
+
+        return Promise.resolve([emptyItem]);
+      }
+
       return Promise.resolve(
         Object.entries(groupedByTag).map(
           ([tag, items]) =>
